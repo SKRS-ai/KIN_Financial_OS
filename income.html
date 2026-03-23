@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Streamer | Kin Financial OS Inflow Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="income-body">
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="brand">
+                <span class="brand-name">KIN</span>
+                <span class="brand-divider">|</span>
+                <span class="product-name">INCOME STREAMER</span>
+            </a>
+            <ul class="main-nav">
+                <li><a href="dashboard.html">The Cockpit</a></li>
+                <li><a href="income.html" class="active-link">Income</a></li>
+                <li><a href="nexus.html">Vault</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="stream-status">Streams Active: 3 ⚡</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container income-main">
+        <section class="income-header">
+            <div class="income-intro">
+                <p class="eyebrow">The Fuel for Your OS</p>
+                <h1>Master Your <span class="accent-text">Inflow.</span></h1>
+                <p>Don't just receive money—direct it. Set up automated partitioning to fuel your Vault, your Kinship accounts, and your Safe-to-Spend balance instantly.</p>
+            </div>
+        </section>
+
+        <section class="streams-grid">
+            <div class="stream-card featured-stream">
+                <div class="stream-type">Primary (W2)</div>
+                <h3>Institutional Payroll</h3>
+                <p>Status: <strong>Connected via Plaid</strong></p>
+                <div class="partition-preview">
+                    <div class="p-bar vault" style="width: 45%;" title="Vault"></div>
+                    <div class="p-bar safe" style="width: 55%;" title="Safe-to-Spend"></div>
+                </div>
+                <div class="stream-actions">
+                    <span>Next Deposit: Mar 27</span>
+                    <button class="btn-manage">Edit Rules</button>
+                </div>
+            </div>
+
+            <div class="stream-card">
+                <div class="stream-type">Gig / 1099</div>
+                <h3>Side-Hustle Hub</h3>
+                <p>Uber, DoorDash, or Freelance income tracked here for tax-shielding.</p>
+                <div class="stream-actions">
+                    <button class="btn-outline-sm">+ Add Stream</button>
+                </div>
+            </div>
+
+            <div class="stream-card">
+                <div class="stream-type">Rewards</div>
+                <h3>Kinship Deposits</h3>
+                <p>Automated deposits for Kid Kin and Teen Kin allowances and performance rewards.</p>
+                <div class="stream-actions">
+                    <a href="kid-kin.html" class="link-text">Manage Tiers →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="partition-logic">
+            <h3>Automated Partitioning Strategy</h3>
+            <div class="logic-box">
+                <div class="logic-row">
+                    <span>Move to Nexus Vault (Bills/Rent)</span>
+                    <strong>45%</strong>
+                </div>
+                <div class="logic-row">
+                    <span>Move to Kin-Academy Savings</span>
+                    <strong>10%</strong>
+                </div>
+                <div class="logic-row">
+                    <span>Released to Safe-to-Spend</span>
+                    <strong class="emerald-text">45%</strong>
+                </div>
+            </div>
+            <p class="logic-disclaimer">Changes to partitioning take effect on the next business cycle.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>KIN FINANCIAL</h3>
+                <p>Managed by Solomon Kin, LLC. Precision inflow for the modern Philadelphia household.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Operations</h4>
+                    <a href="income.html">Income Streamer</a>
+                    <a href="nexus.html">Nexus Vault</a>
+                    <a href="ledger.html">Tax Ledger</a>
+                </div>
+                <div class="link-group">
+                    <h4>Community</h4>
+                    <a href="solidarity.html">Solidarity</a>
+                    <a href="grants.html">Grant Gateway</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Solomon Kin, LLC. | Capital with Intention.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
