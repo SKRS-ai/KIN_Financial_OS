@@ -3,117 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kin Financial | Personal Finance Operating System</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Bank-Ink Information Depot | Financial Literacy</title>
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --accent-yellow: #ffd700;
+            --text-dark: #333;
+            --light-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #003d80 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-yellow);
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .hero-section {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .nexus-card-container {
+            background: #f9f9f9;
+            border-left: 10px solid var(--primary-blue);
+            padding: 2rem;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            border-radius: 0 15px 15px 0;
+        }
+        .nexus-card-image {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            border: 1px solid #eee;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-yellow);
+        }
+        .card img {
+            width: 80px;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="site-header">
-        <nav class="navbar container">
-            <a href="index.html" class="brand">
-                <span class="brand-name">KIN</span>
-                <span class="brand-divider">|</span>
-                <span class="product-name">FINANCIAL OS</span>
-            </a>
+<header>
+    <h1>🖋️ Bank-Ink Information Depot</h1>
+    <p>Financial Literacy for All Ages</p>
+</header>
 
-            <ul class="main-nav">
-                <li><a href="#operating-system">The OS</a></li>
-                <li><a href="#kinship">Kinship Youth</a></li>
-                <li><a href="academy.html">Academy</a></li>
-                <li><a href="solidarity.html">Solidarity</a></li>
-            </ul>
+<div class="container">
+    
+    <section class="hero-section">
+        <img src="assets/hero-banner.png" alt="Bank-Ink Hero Banner" class="hero-image">
+        <h2>Your Knowledge Base for Banking & Wealth</h2>
+    </section>
 
-            <div class="nav-actions">
-                <a href="login.html" class="link-login">Sign In</a>
-                <a href="register.html" class="btn-primary">Enroll</a>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero-section container">
-            <div class="hero-content">
-                <p class="eyebrow">A Solomon Kin, LLC Advisory</p>
-                <h1>The Operating System for your <span class="accent-text">Capital.</span></h1>
-                <p class="sub-headline">
-                    Kin Financial OS (PFOS) is a non-custodial architecture that automates your bill-pay routine, 
-                    shields your primary deposits, and builds a legacy of financial literacy. 
-                    One interface. Total control.
-                </p>
-                <div class="cta-row">
-                    <a href="register.html" class="btn-main">Launch your OS</a>
-                    <a href="#how-it-works" class="link-secondary">How the "Blanket" Works →</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="glass-card-mockup">
-                    <img src="assetsnexus-card-kin.png" alt="Kin Nexus Card">
-                </div>
-            </div>
-        </section>
-
-        <section class="trust-bar">
-            <div class="container bar-flex">
-                <div class="trust-item"><strong>256-BIT</strong><span>Institutional Security</span></div>
-                <div class="trust-item"><strong>NON-CUSTODIAL</strong><span>You Keep Your Bank</span></div>
-                <div class="trust-item"><strong>PHILLY-ROOTED</strong><span>Community Advisory</span></div>
-            </div>
-        </section>
-
-        <section id="operating-system" class="feature-grid container">
-            <div class="feature-header">
-                <h2>Precision in your <br>Financial Routine.</h2>
-                <p>We've engineered a system that handles the "boring" parts of money so you can focus on the growth.</p>
-            </div>
-            <div class="grid-layout">
-                <div class="feature-card">
-                    <h3>1-Click Bill Pay</h3>
-                    <p>Automate utilities and subscriptions with a secondary shielding layer.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Safe-to-Spend</h3>
-                    <p>Real-time analytics that tell you exactly what you have after all obligations are met.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>The Kinship Pipeline</h3>
-                    <p>A graduated system for Kids, Teens, and College Students to master the OS early.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-info">
-                <h3>KIN FINANCIAL</h3>
-                <p>Managed by Solomon Kin, LLC. Empowering the Philadelphia community through financial technology and institutional advisory.</p>
-            </div>
-            <div class="footer-links">
-                <div class="link-group">
-                    <h4>The OS</h4>
-                    <a href="dashboard.html">Dashboard</a>
-                    <a href="nexus.html">Nexus Vault</a>
-                    <a href="ledger.html">Ledger</a>
-                </div>
-                <div class="link-group">
-                    <h4>Kinship</h4>
-                    <a href="kid-kin.html">Kid Kin</a>
-                    <a href="teen-kin.html">Teen Kin</a>
-                    <a href="college-kin.html">College Kin</a>
-                </div>
-                <div class="link-group">
-                    <h4>Trust</h4>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="terms.html">Terms</a>
-                    <a href="security.html">Security</a>
-                </div>
-            </div>
+    <section class="nexus-card-container">
+        <img src="assets/nexus-card-kin.png" alt="Kin Nexus Card" class="nexus-card-image">
+        <div>
+            <h3>The Kin Nexus Card</h3>
+            <p>Your master directory to the Bank-Ink network. This card represents the connection between literacy, community, and financial growth.</p>
         </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2026 Solomon Kin, LLC. All Rights Reserved.</p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <img src="assets/icon-banking.png" alt="Banking">
+            <h3>Banking Basics</h3>
+            <p>Learn about checking, savings, and protecting your daily "ink."</p>
+            <a href="banking-basics.html" class="btn">Start Learning</a>
         </div>
-    </footer>
+
+        <div class="card">
+            <img src="assets/icon-investing.png" alt="Investing">
+            <h3>Investment Wing</h3>
+            <p>Understand the stock market, risk, and long-term wealth building.</p>
+            <a href="investing-101.html" class="btn">Grow Wealth</a>
+        </div>
+
+        <div class="card">
+            <img src="assets/icon-glossary.png" alt="Glossary">
+            <h3>A-Z Glossary</h3>
+            <p>Our complete database of banking and financial terms defined.</p>
+            <a href="glossary.html" class="btn">View Terms</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Bank-Ink Information Depot | Written Profit. Safe Ink.</p>
+</footer>
 
 </body>
 </html>
