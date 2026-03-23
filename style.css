@@ -1,29 +1,31 @@
-/* --- PRESTIGE STYLING: Solomon Kin LLC --- */
-
+/* --- KIN FINANCIAL OS MASTER STYLE --- */
 :root {
-    --alabaster: #FAFAFA;   /* Million-Dollar White */
-    --midnight: #001F3F;    /* Deep Executive Navy */
-    --burnished-gold: #B8860B; /* Deep Rich Gold */
-    --soft-gold: #D4AF37;   /* Bright Gold Accent */
-    --slate: #4A4A4A;       /* Refined Gray text */
+    --white: #ffffff;
+    --navy: #001A33;       /* Professional Authority */
+    --emerald: #00875A;    /* The Color of Liquid Capital */
+    --soft-gray: #F5F7FA;  /* For Sub-sections */
+    --text-dark: #121417;
+    --text-light: #5F6368;
+    --gold: #D4AF37;       /* Small accent for prestige */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--alabaster);
-    color: var(--slate);
-    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
-.container { max-width: 1300px; margin: 0 auto; padding: 0 40px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 30px; }
 
-/* NAVIGATION */
-.prestige-header {
-    background: #fff;
-    padding: 30px 0;
+/* HEADER: Clean & Strong */
+.site-header {
+    background: var(--white);
     border-bottom: 1px solid #EAEAEA;
+    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -31,99 +33,43 @@ body {
 
 .navbar { display: flex; justify-content: space-between; align-items: center; }
 
-.brand { display: flex; align-items: center; text-decoration: none; }
-.initials {
-    background: var(--midnight);
-    color: var(--soft-gold);
-    font-size: 28px;
-    font-weight: 800;
-    padding: 10px 15px;
-    margin-right: 20px;
-    border-radius: 2px;
-}
+.brand { text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.brand-name { font-weight: 800; font-size: 20px; color: var(--navy); letter-spacing: -0.5px; }
+.brand-divider { color: var(--emerald); font-weight: 300; }
+.product-name { font-weight: 400; font-size: 14px; color: var(--text-light); letter-spacing: 1px; }
 
-.main-title { display: block; font-weight: 800; font-size: 22px; color: var(--midnight); letter-spacing: 2px; }
-.sub-title { font-size: 10px; color: var(--burnished-gold); letter-spacing: 3px; font-weight: 600; }
+.main-nav { display: flex; list-style: none; gap: 32px; }
+.main-nav a { text-decoration: none; color: var(--navy); font-weight: 600; font-size: 14px; transition: color 0.2s; }
+.main-nav a:hover { color: var(--emerald); }
 
-.nav-links { display: flex; align-items: center; gap: 40px; }
-.nav-links a { text-decoration: none; color: var(--midnight); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+.link-login { text-decoration: none; color: var(--navy); font-weight: 600; margin-right: 24px; font-size: 14px; }
+.btn-primary { background: var(--navy); color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; }
 
-.cta-gold {
-    background: var(--midnight);
-    color: var(--soft-gold) !important;
-    padding: 15px 30px;
-    border-radius: 0; /* Sharp, prestigious edges */
-    font-weight: 700 !important;
-    border: 1px solid var(--soft-gold);
-}
+/* HERO */
+.hero-section { padding: 120px 0; display: flex; align-items: center; gap: 60px; }
+.hero-content { flex: 1.2; }
+.hero-image { flex: 0.8; }
 
-/* HERO SECTION */
-.hero-prestige {
-    padding: 180px 0;
-    background: radial-gradient(circle at top right, #fff, #f4f4f4);
-    text-align: center;
-}
+.eyebrow { color: var(--emerald); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 64px; font-weight: 800; line-height: 1.1; margin-bottom: 24px; color: var(--navy); }
+.accent-text { color: var(--emerald); }
+.sub-headline { font-size: 20px; color: var(--text-light); margin-bottom: 40px; }
 
-.pre-title { color: var(--burnished-gold); font-weight: 700; letter-spacing: 5px; font-size: 12px; margin-bottom: 30px; }
+.btn-main { background: var(--navy); color: #fff; padding: 20px 40px; text-decoration: none; font-weight: 700; border-radius: 8px; display: inline-block; margin-right: 20px; }
+.link-secondary { color: var(--navy); font-weight: 700; text-decoration: none; }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 72px;
-    color: var(--midnight);
-    line-height: 1.1;
-    margin-bottom: 40px;
-}
-
-.italic-serif { font-style: italic; font-weight: 400; color: var(--burnished-gold); }
-
-.hero-description {
-    max-width: 800px;
-    margin: 0 auto 50px;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-.btn-primary {
-    background: var(--midnight);
-    color: #fff;
-    padding: 22px 50px;
-    text-decoration: none;
-    font-weight: 700;
-    margin-right: 20px;
-    letter-spacing: 2px;
-    transition: 0.3s;
-}
-
-.btn-primary:hover { background: var(--burnished-gold); }
-
-.btn-secondary {
-    padding: 20px 40px;
-    border: 1px solid var(--midnight);
-    text-decoration: none;
-    color: var(--midnight);
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-/* ADVISORY STRIPE */
-.advisory-bar {
-    background: var(--midnight);
-    color: var(--soft-gold);
-    padding: 60px 0;
-}
-
-.stripe-flex { display: flex; justify-content: space-around; text-align: center; }
-.stat-box strong { display: block; font-size: 32px; letter-spacing: 3px; }
-.stat-box span { font-size: 12px; text-transform: uppercase; color: #fff; opacity: 0.7; }
+/* TRUST BAR */
+.trust-bar { background: var(--soft-gray); padding: 40px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+.bar-flex { display: flex; justify-content: space-around; text-align: center; }
+.trust-item strong { display: block; font-size: 20px; color: var(--navy); }
+.trust-item span { font-size: 12px; color: var(--text-light); text-transform: uppercase; font-weight: 700; }
 
 /* FOOTER */
-.gold-footer { background: #050a14; color: #fff; padding: 100px 0 40px; }
-.footer-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 100px; margin-bottom: 80px; }
-.footer-logo { font-family: 'Playfair Display', serif; color: var(--soft-gold); font-size: 36px; margin-bottom: 20px; }
-
-.footer-links-group { display: flex; justify-content: space-between; }
-.f-col h5 { color: var(--soft-gold); margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; }
-.f-col a { display: block; color: #aaa; text-decoration: none; margin-bottom: 15px; font-size: 14px; transition: 0.3s; }
-.f-col a:hover { color: #fff; }
-
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 30px; text-align: center; font-size: 12px; opacity: 0.5; }
+.site-footer { background: var(--white); padding: 100px 0 50px; border-top: 1px solid #eee; }
+.footer-grid { display: flex; justify-content: space-between; margin-bottom: 60px; }
+.footer-info { max-width: 300px; }
+.footer-info h3 { font-size: 18px; margin-bottom: 16px; color: var(--navy); }
+.footer-links { display: flex; gap: 80px; }
+.link-group h4 { font-size: 14px; text-transform: uppercase; color: var(--emerald); margin-bottom: 20px; }
+.link-group a { display: block; text-decoration: none; color: var(--text-light); margin-bottom: 12px; font-size: 14px; }
+.footer-bottom { border-top: 1px solid #eee; padding-top: 30px; text-align: center; font-size: 12px; color: #999; }
