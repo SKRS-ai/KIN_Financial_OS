@@ -104,6 +104,75 @@ body {
     font-size: 12px;
     font-weight: 700;
 }
+/* --- SECURITY PROTOCOL SPECIFIC STYLES --- */
+.security-main { padding: 80px 0; }
+
+.security-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+/* PROTOCOL GRID */
+.protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.protocol-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.protocol-card:hover { border-color: var(--navy); transform: translateY(-5px); }
+
+.icon-box {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.protocol-card h3 { font-size: 20px; color: var(--navy); margin-bottom: 15px; }
+.protocol-card p { font-size: 14px; color: var(--text-light); }
+
+/* BLANKET TECH BOX */
+.blanket-tech {
+    background: var(--soft-gray);
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.tech-box h2 { text-align: center; margin-bottom: 40px; color: var(--navy); }
+
+.tech-steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.step {
+    flex: 1;
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid var(--emerald);
+}
+
+.step strong { display: block; margin-bottom: 10px; font-size: 16px; color: var(--navy); }
+.step p { font-size: 14px; color: var(--text-light); }
+
+.encryption-badge {
+    background: rgba(0, 26, 51, 0.05);
+    color: var(--navy);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
 /* --- LEDGER SPECIFIC STYLES --- */
 .ledger-main { padding: 60px 0; }
 
