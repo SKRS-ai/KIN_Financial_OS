@@ -180,6 +180,59 @@ body {
 .activity-amt.positive { color: var(--emerald); }
 
 .status-chip { background: rgba(0, 135, 90, 0.1); color: var(--emerald); padding: 5px 12px; border-radius: 15px; font-size: 12px; font-weight: 700; }
+/* --- COLLEGE KIN SPECIFIC STYLES --- */
+.college-main { padding: 60px 0; }
+
+.college-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.credit-preview {
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+}
+
+.credit-preview strong { font-size: 32px; color: var(--navy); display: block; }
+.credit-preview p { font-size: 11px; font-weight: 700; color: var(--emerald); margin-top: 5px; }
+
+.college-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.college-card { background: #fff; padding: 35px; border-radius: 12px; border: 1px solid #EAEAEA; }
+
+.grant-bar-bg { background: #eee; height: 10px; border-radius: 5px; margin: 25px 0; overflow: hidden; }
+.grant-bar-fill { background: var(--emerald); height: 100%; }
+
+.grant-details .g-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 15px;
+}
+
+.goal-list { list-style: none; margin-top: 20px; }
+.goal-list li { margin-bottom: 15px; font-weight: 600; display: flex; gap: 10px; }
+
+.recruiter-card { background: var(--navy); color: white; border: none; }
+.recruiter-card h3 { color: var(--emerald); }
+.recruiter-card p { font-size: 14px; opacity: 0.9; margin: 15px 0; }
+
+.philly-campus { border-top: 1px solid #eee; padding-top: 40px; text-align: center; }
+.campus-logos { display: flex; justify-content: center; gap: 40px; margin-top: 20px; font-weight: 800; color: #BBB; font-size: 14px; }
+
+.ind-chip { background: rgba(0, 26, 51, 0.05); color: var(--navy); padding: 6px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; }
 /* HERO */
 .hero-section { padding: 120px 0; display: flex; align-items: center; gap: 60px; }
 .hero-content { flex: 1.2; }
