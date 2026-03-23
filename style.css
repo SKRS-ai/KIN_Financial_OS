@@ -104,6 +104,64 @@ body {
     font-size: 12px;
     font-weight: 700;
 }
+/* --- TERMS OF KINSHIP SPECIFIC STYLES --- */
+.terms-main { padding: 80px 0; }
+
+.terms-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.terms-content {
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.terms-row {
+    display: flex;
+    border-bottom: 1px solid #F5F7FA;
+}
+
+.legal-text {
+    flex: 2;
+    padding: 40px;
+    border-right: 1px solid #F5F7FA;
+}
+
+.legal-text h3 { color: var(--navy); margin-bottom: 15px; font-size: 18px; }
+.legal-text p { font-size: 14px; color: var(--text-dark); line-height: 1.6; }
+
+.plain-english {
+    flex: 1;
+    padding: 40px;
+    background: var(--soft-gray);
+}
+
+.plain-english strong { display: block; color: var(--emerald); font-size: 12px; text-transform: uppercase; margin-bottom: 10px; }
+.plain-english p { font-size: 13px; font-style: italic; color: var(--text-light); }
+
+.acceptance-box {
+    text-align: center;
+    background: var(--navy);
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.acceptance-box p { margin-bottom: 30px; font-size: 18px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+.legal-badge {
+    background: rgba(0, 26, 51, 0.05);
+    color: var(--navy);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
 /* --- SECURITY PROTOCOL SPECIFIC STYLES --- */
 /* --- PRIVACY VAULT SPECIFIC STYLES --- */
 .privacy-main { padding: 80px 0; }
