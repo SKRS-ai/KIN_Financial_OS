@@ -30,6 +30,80 @@ body {
     top: 0;
     z-index: 100;
 }
+/* --- SOLIDARITY SQUARE SPECIFIC STYLES --- */
+.solidarity-main { padding: 80px 0; }
+
+.solidarity-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+/* IMPACT TICKER */
+.impact-ticker {
+    display: flex;
+    justify-content: space-around;
+    background: var(--soft-gray);
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.ticker-box strong { display: block; font-size: 42px; color: var(--navy); font-weight: 800; }
+.ticker-box span { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--text-light); font-weight: 700; }
+
+/* PARTNER CARDS */
+.partner-grid .section-title { text-align: center; margin-bottom: 50px; }
+.grid-layout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+
+.partner-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.partner-card:hover { border-color: var(--emerald); transform: translateY(-5px); }
+
+.partner-logo-placeholder {
+    width: 60px;
+    height: 60px;
+    background: var(--navy);
+    color: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-weight: 800;
+}
+
+.partner-link { display: inline-block; margin-top: 20px; color: var(--emerald); font-weight: 700; text-decoration: none; }
+
+/* GRANT PROMO */
+.grant-promo {
+    background: linear-gradient(135deg, var(--navy), #003366);
+    color: white;
+    padding: 80px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.grant-promo h2 { font-size: 36px; margin-bottom: 20px; }
+.grant-promo p { max-width: 600px; margin: 0 auto 30px; font-size: 18px; opacity: 0.9; }
+
+.philly-badge {
+    background: rgba(0, 135, 90, 0.1);
+    color: var(--emerald);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
 /* --- KID KIN SPECIFIC STYLES --- */
 .kid-hero {
     display: flex;
