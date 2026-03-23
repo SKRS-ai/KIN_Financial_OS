@@ -104,6 +104,88 @@ body {
     font-size: 12px;
     font-weight: 700;
 }
+/* --- LEDGER SPECIFIC STYLES --- */
+.ledger-main { padding: 60px 0; }
+
+.ledger-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.filter-select {
+    padding: 10px 20px;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--navy);
+    outline: none;
+}
+
+/* THE TABLE */
+.ledger-table-container {
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.ledger-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.ledger-table th {
+    background: var(--soft-gray);
+    padding: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.ledger-table td {
+    padding: 20px;
+    border-bottom: 1px solid #F5F7FA;
+    font-size: 14px;
+}
+
+.tag {
+    background: #f0f2f5;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.settled { background: rgba(0, 135, 90, 0.1); color: var(--emerald); }
+.shielded { background: rgba(0, 26, 51, 0.1); color: var(--navy); }
+.pending { background: #fff3cd; color: #856404; }
+
+.amt-pos { color: var(--emerald); font-weight: 700; }
+.amt-neg { color: var(--navy); font-weight: 700; }
+
+.btn-outline-sm {
+    border: 1px solid var(--navy);
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+}
 /* --- KID KIN SPECIFIC STYLES --- */
 .kid-hero {
     display: flex;
