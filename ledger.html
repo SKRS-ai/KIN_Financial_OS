@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ledger | Kin Financial OS Transaction Authority</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="ledger-body">
 
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="brand">
+                <span class="brand-name">KIN</span>
+                <span class="brand-divider">|</span>
+                <span class="product-name">THE LEDGER</span>
+            </a>
+            <ul class="main-nav">
+                <li><a href="dashboard.html">The Cockpit</a></li>
+                <li><a href="nexus.html">Nexus Vault</a></li>
+                <li><a href="ledger.html" class="active-link">Ledger</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-outline-sm">Export CSV</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container ledger-main">
+        <section class="ledger-header">
+            <div class="ledger-intro">
+                <h1>Transaction <span class="accent-text">Authority.</span></h1>
+                <p>A high-fidelity record of your capital movement. All entries are verified by the Kin OS Shielding Protocol.</p>
+            </div>
+            <div class="ledger-filters">
+                <select class="filter-select">
+                    <option>All Accounts</option>
+                    <option>Adult OS</option>
+                    <option>Kid Kin Depot</option>
+                    <option>Teen Kin Launchpad</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="ledger-table-container">
+            <table class="ledger-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Entity / Description</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mar 22, 2026</td>
+                        <td><strong>PECO Energy - Philadelphia</strong></td>
+                        <td><span class="tag">Utilities</span></td>
+                        <td><span class="status-badge settled">Settled</span></td>
+                        <td class="amt-neg">-$142.50</td>
+                    </tr>
+                    <tr>
+                        <td>Mar 21, 2026</td>
+                        <td><strong>Employer Deposit (Direct)</strong></td>
+                        <td><span class="tag">Income</span></td>
+                        <td><span class="status-badge shielded">Shielded (45%)</span></td>
+                        <td class="amt-pos">+$3,200.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mar 20, 2026</td>
+                        <td><strong>Philly Water Dept</strong></td>
+                        <td><span class="tag">Utilities</span></td>
+                        <td><span class="status-badge pending">Pending</span></td>
+                        <td class="amt-neg">-$65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mar 19, 2026</td>
+                        <td><strong>Reading Terminal Market</strong></td>
+                        <td><span class="tag">Safe-Spend</span></td>
+                        <td><span class="status-badge settled">Settled</span></td>
+                        <td class="amt-neg">-$34.20</td>
+                    </tr>
+                    <tr>
+                        <td>Mar 18, 2026</td>
+                        <td><strong>Kid Kin Weekly Allowance</strong></td>
+                        <td><span class="tag">Kinship</span></td>
+                        <td><span class="status-badge shielded">Automated</span></td>
+                        <td class="amt-neg">-$50.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>KIN FINANCIAL</h3>
+                <p>Managed by Solomon Kin, LLC. Institutional-grade auditing for the modern household.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>The OS</h4>
+                    <a href="dashboard.html">Cockpit</a>
+                    <a href="nexus.html">Nexus Vault</a>
+                    <a href="ledger.html">Full Ledger</a>
+                </div>
+                <div class="link-group">
+                    <h4>Support</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="security.html">Security Specs</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Solomon Kin, LLC. | Financial Integrity in Philadelphia.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
