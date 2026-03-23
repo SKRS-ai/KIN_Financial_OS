@@ -186,6 +186,109 @@ body {
     cursor: pointer;
     font-size: 12px;
 }
+/* --- INCOME STREAMER SPECIFIC STYLES --- */
+.income-main { padding: 60px 0; }
+
+.income-header {
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+/* STREAMS GRID */
+.streams-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.stream-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s ease;
+}
+
+.featured-stream {
+    border-top: 5px solid var(--emerald);
+    box-shadow: 0 10px 30px rgba(0, 135, 90, 0.05);
+}
+
+.stream-type {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.partition-preview {
+    display: flex;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.p-bar.vault { background: var(--navy); }
+.p-bar.safe { background: var(--emerald); }
+
+.stream-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.btn-manage {
+    background: var(--soft-gray);
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* LOGIC BOX */
+.logic-box {
+    background: var(--white);
+    border: 1px solid #EAEAEA;
+    padding: 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.logic-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #F5F7FA;
+    font-weight: 600;
+}
+
+.logic-disclaimer {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.stream-status {
+    background: rgba(0, 135, 90, 0.1);
+    color: var(--emerald);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
 /* --- KID KIN SPECIFIC STYLES --- */
 .kid-hero {
     display: flex;
