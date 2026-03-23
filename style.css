@@ -247,6 +247,93 @@ input:checked + .slider { background-color: var(--emerald); }
 input:checked + .slider:before { transform: translateX(26px); }
 
 .vault-status { font-size: 12px; font-weight: 700; color: var(--navy); background: var(--soft-gray); padding: 8px 15px; border-radius: 20px; }
+/* --- KIN-ACADEMY SPECIFIC STYLES --- */
+.academy-main { padding: 60px 0; }
+
+.academy-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.academy-search input {
+    width: 100%;
+    padding: 20px 30px;
+    border: 1px solid #EAEAEA;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+    outline: none;
+    transition: 0.3s;
+}
+
+.academy-search input:focus { border-color: var(--emerald); box-shadow: 0 10px 25px rgba(0, 135, 90, 0.1); }
+
+/* COURSE GRID */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.course-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.course-card:hover { transform: translateY(-5px); border-color: var(--emerald); }
+
+.course-tag {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.gold-tag { color: var(--gold); }
+
+.course-card h3 { font-size: 24px; color: var(--navy); margin-bottom: 15px; }
+
+.course-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #F5F7FA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-start { text-decoration: none; font-weight: 700; color: var(--emerald); font-size: 14px; }
+
+/* WORKSHOP BANNER */
+.workshop-banner {
+    background: var(--navy);
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iq-badge {
+    background: rgba(0, 135, 90, 0.1);
+    color: var(--emerald);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
 /* --- COLLEGE KIN SPECIFIC STYLES --- */
 .college-main { padding: 60px 0; }
 
