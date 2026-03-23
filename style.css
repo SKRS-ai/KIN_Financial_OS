@@ -180,6 +180,73 @@ body {
 .activity-amt.positive { color: var(--emerald); }
 
 .status-chip { background: rgba(0, 135, 90, 0.1); color: var(--emerald); padding: 5px 12px; border-radius: 15px; font-size: 12px; font-weight: 700; }
+/* --- NEXUS VAULT SPECIFIC STYLES --- */
+.vault-main { padding: 60px 0; }
+
+.vault-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.ratio-circle {
+    width: 150px;
+    height: 150px;
+    border: 8px solid var(--emerald);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 135, 90, 0.1);
+}
+
+.ratio-circle strong { font-size: 32px; color: var(--navy); }
+.ratio-circle span { font-size: 10px; text-transform: uppercase; font-weight: 700; text-align: center; padding: 0 15px; }
+
+/* CARD DISPLAY */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.nexus-card-display {
+    height: 200px;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.physical { background: linear-gradient(135deg, var(--navy), #003366); }
+.virtual { background: #fff; border: 1px solid #EAEAEA; color: var(--navy); }
+.virtual-alt { background: var(--soft-gray); border: 1px solid #EAEAEA; color: var(--navy); }
+
+.chip { width: 40px; height: 30px; background: var(--gold); border-radius: 4px; margin-bottom: 20px; }
+.card-number { font-family: monospace; font-size: 18px; letter-spacing: 2px; }
+.status-on { color: var(--emerald); font-weight: 800; font-size: 12px; }
+
+/* TOGGLE SWITCHES */
+.blanket-controls { margin-top: 80px; padding: 40px; background: #fff; border-radius: 15px; border: 1px solid #EAEAEA; }
+.rule-item { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #F5F7FA; }
+
+.switch { position: relative; display: inline-block; width: 50px; height: 24px; }
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 34px; }
+.slider:before { position: absolute; content: ""; height: 16px; width: 16px; left: 4px; bottom: 4px; background-color: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: var(--emerald); }
+input:checked + .slider:before { transform: translateX(26px); }
+
+.vault-status { font-size: 12px; font-weight: 700; color: var(--navy); background: var(--soft-gray); padding: 8px 15px; border-radius: 20px; }
 /* --- COLLEGE KIN SPECIFIC STYLES --- */
 .college-main { padding: 60px 0; }
 
