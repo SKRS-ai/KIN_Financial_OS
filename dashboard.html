@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cockpit | Kin Financial OS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="brand">
+                <span class="brand-name">KIN</span>
+                <span class="brand-divider">|</span>
+                <span class="product-name">FINANCIAL OS</span>
+            </a>
+            <ul class="main-nav">
+                <li><a href="dashboard.html" class="active-link">The Cockpit</a></li>
+                <li><a href="nexus.html">Nexus Vault</a></li>
+                <li><a href="academy.html">Academy</a></li>
+                <li><a href="solidarity.html">Solidarity</a></li>
+            </ul>
+            <div class="nav-actions">
+                <span class="user-welcome">Welcome, Member</span>
+                <a href="index.html" class="btn-primary">Sign Out</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-main container">
+        <section class="system-status-row">
+            <div class="status-indicator">
+                <span class="pulse-green"></span>
+                <p>System Status: <strong>Active Protection</strong></p>
+            </div>
+            <div class="date-display">
+                <p>Monday, March 23, 2026</p>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card featured-card">
+                <p class="card-label">Safe-to-Spend Balance</p>
+                <h2 class="emerald-text">$4,250.00</h2>
+                <p class="card-note">After all upcoming bills & obligations.</p>
+            </div>
+
+            <div class="stat-card">
+                <p class="card-label">Total Liquid Capital</p>
+                <h3>$8,900.00</h3>
+                <div class="mini-graph">[|||||||||||]</div>
+            </div>
+
+            <div class="stat-card">
+                <p class="card-label">Protected Obligations</p>
+                <h3 class="navy-text">$4,650.00</h3>
+                <p class="card-note">Shielded in the Nexus Vault.</p>
+            </div>
+        </section>
+
+        <section class="activity-pipeline">
+            <div class="pipeline-header">
+                <h3>Automation Pipeline</h3>
+                <a href="ledger.html" class="view-all">View Full Ledger →</a>
+            </div>
+            
+            <div class="pipeline-list">
+                <div class="pipeline-item">
+                    <div class="item-info">
+                        <strong>PECO Energy - Philadelphia</strong>
+                        <span>Utility • Due in 4 days</span>
+                    </div>
+                    <div class="item-status">
+                        <span class="badge-shield">Shielded</span>
+                        <span class="amount">$142.50</span>
+                    </div>
+                </div>
+
+                <div class="pipeline-item">
+                    <div class="item-info">
+                        <strong>Mortgage / Rent Payment</strong>
+                        <span>Housing • Due in 12 days</span>
+                    </div>
+                    <div class="item-status">
+                        <span class="badge-shield">Shielded</span>
+                        <span class="amount">$2,100.00</span>
+                    </div>
+                </div>
+
+                <div class="pipeline-item">
+                    <div class="item-info">
+                        <strong>Kid Kin Deposit</strong>
+                        <span>Kinship Youth • Automated</span>
+                    </div>
+                    <div class="item-status">
+                        <span class="badge-pending">Pending</span>
+                        <span class="amount">$50.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>KIN FINANCIAL</h3>
+                <p>Managed by Solomon Kin, LLC. Empowering the Philadelphia community through financial technology and institutional advisory.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>The OS</h4>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="nexus.html">Nexus Vault</a>
+                    <a href="ledger.html">Ledger</a>
+                </div>
+                <div class="link-group">
+                    <h4>Trust</h4>
+                    <a href="privacy.html">Privacy</a>
+                    <a href="security.html">Security</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Solomon Kin, LLC. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
